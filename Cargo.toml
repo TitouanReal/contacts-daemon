@@ -1,0 +1,18 @@
+[package]
+name = "contacts-daemon"
+version = "0.1.0"
+authors = ["Titouan Real <titouan.real@gmail.com>"]
+edition = "2021"
+description = "Daemon to offer contacts management functionality over D-Bus."
+repository = "https://github.com/TitouanReal/contacts-daemon"
+license = "GPL-3.0"
+
+[dependencies]
+ical = "0.11"
+polars = { version = "0.45", features = ["polars-io", "parquet"] }
+rand = "0.8"
+serde = "1.0"
+serde_json = "1.0"
+tokio = { version = "1.43", features = ["full"] }
+vcard = "0.4"
+zbus = "5"
